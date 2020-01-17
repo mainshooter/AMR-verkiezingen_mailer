@@ -1,0 +1,18 @@
+{
+  "name": "amr_mailer",
+  "version": "1.0.0",
+  "description": "Mailer to send mails",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Mailer"
+  ],
+  "author": "Peter Romijn",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^2.1.0",
+    "nodemailer": "^6.4.2"
+  }
+}
