@@ -18,7 +18,7 @@ const config = require("./config");
     let mails = await db.run("SELECT * FROM receivers WHERE is_send = 0 LIMIT 1");
 
     await mails.forEach(async (mail) => {
-      await mailer(mail["mail"], "test mailtje", config.html);
+      await mailer(mail["mail"], config.subject, config.html);
       await db.run("UPDATE receivers SET is_send = 1 WHERE mail = ?", [mail['mail']]);
 
     });
